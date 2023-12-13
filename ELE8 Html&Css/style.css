@@ -1,0 +1,349 @@
+/* Reset browser padding and margin */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100%;
+}
+
+
+.nav{
+    height: 40vh; /* Sets height to 40% of viewport height */
+    background-image: url(./Snapshot/1.jpg); /* Sets background image */
+    background-position: top; /* Positions background image at the top */
+    background-repeat: no-repeat; /* Prevents background image from repeating */
+    background-size: c; /* Scales background image to cover entire area */
+    padding: 10px; /* Adds padding around content */
+    width: 100%;
+}
+
+
+.nav .navbar {
+    /* set margin below navbar */
+    margin-bottom: 5px;
+}
+
+
+.nav .navbar ul {
+    /* flex container setup */
+    display: flex;
+    flex-direction: row;
+
+    /* space items equally, no more than needed */
+    justify-content: space-between;
+
+    /* center items vertically */
+    align-items: center;
+}
+
+
+.nav .navbar ul li{
+    /* Removes list style type */
+    list-style-type: none;
+}
+
+
+
+.nav .navbar ul li a{
+    /* Unset underline */
+    text-decoration: none;
+
+    /* White text color */
+    color: white;
+
+    /* Set font size and family */
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.nav .navbar ul li button{
+    /* Background color */
+    background-color: red;
+
+    /* Text color */
+    color: white;
+
+    /* Font */
+    font-family: sans-serif;
+    font-weight:600;
+
+    /* Padding */
+    padding: 6px 26px;
+
+    /* Border radius */
+    border-radius: 15px;
+
+    /* Remove border */
+    border: none;
+
+    /* Margin right */
+    margin-right: 10px;
+
+    /* Cursor style */
+    cursor: pointer;
+}
+
+
+
+.nav .navbar ul li button:hover{
+    /* Scale button on hover */
+    transform: scale(1.2);
+
+    /* Smoothly transition the scale effect */
+    transition: all .2s;
+}
+
+
+
+.navText {
+    /* center the text */
+    margin: auto;
+    /* set the text width */
+    width: 38%;
+    /* set the text color */
+    color: white;
+}
+
+
+
+.navText h1{
+    /* font family: Segoe UI */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* bottom margin: 5px */
+    margin-bottom: 5px;
+
+    /* font size: 50px */
+    font-size: 50px;
+}
+
+
+
+.navText p{
+    /*Set line height for readability*/
+    line-height: 1.4;
+    /*Set margin bottom for spacing*/
+    margin-bottom: 30px;
+    /*Set font family for styling*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Navigation button style */
+.navText button{
+    /* Set button padding */
+    padding: 10px 28px;
+
+    /* Set button text color */
+    color: white;
+
+    /* Set button background color */
+    background-color: #36b8fe;
+
+    /* Remove button border */
+    border: none;
+
+    /* Set button border radius */
+    border-radius: 25px;
+
+    /* Set button font */
+    font-family: sans-serif;
+
+    /* Set button font weight */
+    font-weight:800;
+
+    /* Set button cursor to pointer */
+    cursor: pointer;
+}
+
+
+
+.navText button:hover{
+    /* increase size on hover */
+    transform: scale(1.2);
+
+    /* smoothly transition changes */
+    transition: all .3s;
+}
+
+
+
+/* Padding & height for gallery */
+.gallery{
+    padding: 10px; /* Apply 10px padding around gallery */
+    height: 50vh; /* Set gallery height to 50% of viewport height */
+}
+
+
+
+.gallery h2{
+    /* center-aligned heading */
+    text-align: center;
+
+    /* use a different font */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    /* larger font size */
+    font-size: 36px;
+}
+
+
+
+/* Navigation Button Style */
+.gallery .navButton{
+    margin: auto;                      /* Centers button */
+    width: 38%;                         /* Button width */
+    padding: 10px;                      /* Padding inside button */
+    display: flex;                      /* Flexbox for spacing */
+    justify-content: space-around;      /* Evenly distribute spacing */
+    margin-top: 35px;                   /* Top margin */
+    margin-bottom: 15px;                /* Bottom margin */
+}
+
+
+
+.gallery .navButton button{
+    /* pointer cursor for button */
+    cursor: pointer;
+
+    /* button padding and size */
+    padding: 7px 26px;
+
+    /* button border radius and border */
+    border-radius: 25px;
+    border: 1px solid #36b8fe;
+
+    /* button background color and text color */
+    background-color: transparent;
+    color: #36b8fe;
+
+    /* button font */
+    font-family: sans-serif;
+    font-weight:700;
+}
+
+
+
+.gallery .navButton button:hover{
+    /* on button hover, change the background color */
+    background-color: #36b8fe;
+    /* change text color to white */
+    color: white;
+}
+
+
+
+.gallery .navButton button:first-child{
+    /* First button background color */
+    background-color: #36b8fe;
+
+    /* First button text color */
+    color: white;
+}
+
+
+
+.gallery .gallerypictures {
+    /* set gallery picture width */
+    width: 50%;
+
+    /* center gallery picture */
+    margin: auto;
+
+    /* set gallery picture height */
+    height: 37vh;
+
+    /* create grid for gallery picture */
+    display: grid;
+
+    /* set grid columns for gallery picture */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* set row gap for gallery picture */
+    row-gap: 15px;
+
+    /* set column gap for gallery picture */
+    column-gap: 15px;
+}
+
+
+
+/* Define image class */
+.galleryimg1 {
+    /* Set image source */
+    background-image: url(./Snapshot/3.jpg);
+    /* Fill container with image */
+    background-size: cover;
+    /* Disable image repetition */
+    background-repeat: no-repeat;
+    /* Center image within container */
+    background-position: center;
+}
+
+
+
+/* We define the style of the 8 images */
+
+
+.galleryimg2 {
+    /* Set background image from file */
+    background-image: url(./Snapshot/2.jpg);
+    /* Adjust background size to fit container */
+    background-size: cover;
+    /* Prevent background image repetition */
+    background-repeat: no-repeat;
+    /* Align background image to center */
+    background-position: center;
+    /* Set container height */
+    height: 92%;
+}
+
+
+.galleryimg3{
+    background-image: url(./Snapshot/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.galleryimg4{
+    background-image: url(./Snapshot/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.galleryimg5{
+    background-image: url(./Snapshot/5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.galleryimg6{
+    background-image: url(./Snapshot/8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85%;
+    position: relative;
+    top: -5px;
+}
+.galleryimg7{
+    background-image: url(./Snapshot/10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90%;
+}
+.galleryimg8{
+    background-image: url(./Snapshot/7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90%;
+}
